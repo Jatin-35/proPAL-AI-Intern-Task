@@ -60,7 +60,7 @@ AI-VOICE-AGENT/
 
 ### 2. Setup Virtual Environment
 ```
-  - python -m venv venv
+ - python -m venv venv
 
   # On Unix/macOS
   - source venv/bin/activate
