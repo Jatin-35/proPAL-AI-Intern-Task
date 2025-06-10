@@ -53,46 +53,48 @@ AI-VOICE-AGENT/
 ### 1. Clone the Repository
 
 ```bash
-  - git clone https://github.com/yourusername/ai-voice-assistant.git
-  - cd ai-voice-assistant
+   git clone https://github.com/Jatin-35/proPAL-AI-Intern-Task.git
+   cd ai-voice-assistant
 ```
 
 ### 2. Setup Virtual Environment
 ```
- - python -m venv venv
+   python -m venv venv
 
   # On Unix/macOS
-  - source venv/bin/activate
+   source venv/bin/activate
 
   # On Windows
-  -venv\Scripts\activate
+  venv\Scripts\activate
 ```
 
 ### 3. Install Dependencies
 
 ```
-  - pip install "livekit-agents[deepgram,groq,elevenlabs,openai ,cartesia,silero,turn-detector]~=1.0" "livekit-plugins-noise-cancellation~=0.2" python-dotenv openpyxl
+  # Required dependencies installation
+   pip install "livekit-agents[deepgram,groq,elevenlabs,openai ,cartesia,silero,turn-detector]~=1.0" "livekit-plugins-noise-cancellation~=0.2" python-dotenv openpyxl
 ```
 
 ### 4. Then Run this
 
 ```
   # To save current installed packages to a file:
-  - pip freeze > requirements.txt
+  pip freeze > requirements.txt
 ```
 
 ### 4. Configure .env
 Create a .env file in the root directory with your credentials:
 
 ```
-  - LIVEKIT_URL=wss://your-project.livekit.cloud
-  - LIVEKIT_API_KEY=your_livekit_api_key
-  - LIVEKIT_API_SECRET=your_livekit_api_secret
+  # required API keys for pipeline 
+  LIVEKIT_URL=wss://your-project.livekit.cloud
+  LIVEKIT_API_KEY=your_livekit_api_key
+  LIVEKIT_API_SECRET=your_livekit_api_secret
 
-  - DEEPGRAM_API_KEY=your_deepgram_api_key
-  - CARTESIA_API_KEY=your_cartesia_api_key
-  - GROQ_API_KEY=your_groq_api_key
-  - ELEVENLABS_API_KEY=your_elevenlabs_api_key
+  DEEPGRAM_API_KEY=your_deepgram_api_key
+  CARTESIA_API_KEY=your_cartesia_api_key
+  GROQ_API_KEY=your_groq_api_key
+  ELEVENLABS_API_KEY=your_elevenlabs_api_key
 ```
 
 ## ▶️ Run the Assistant
@@ -100,7 +102,7 @@ Create a .env file in the root directory with your credentials:
 
 ```
   # This runs the assistant locally for development or testing purposes using console mode.
-  - python src/agent.py console
+  python src/agent.py console
 
 ```
 
@@ -108,13 +110,18 @@ Create a .env file in the root directory with your credentials:
 
 ```
   # This runs the assistant on LiveKit Cloud using the LiveKit Agents Playground.
-  - python src/agent.py dev
+  python src/agent.py dev
 ```
 
 --> ⚠️ Note: Ensure your .env file is configured correctly with valid API keys and URLs before launching.
 
 ---
 
+## STT-LLM--TTS Pipeline Structure
+
+![image](https://github.com/user-attachments/assets/a63986ec-ba0a-4c0f-843a-22f330809e86)
+
+---
 ## 📊 Metrics Logging
 - The metrics.py file collects and logs important real-time performance statistics:
 
