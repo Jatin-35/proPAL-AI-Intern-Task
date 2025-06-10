@@ -29,6 +29,7 @@ AI-VOICE-AGENT/
 │ └── pycache/
 ├── .env # API keys and credentials
 ├── .gitignore
+├── metrics.xlxs # contains log details
 ├── requirements.txt # Project dependencies
 
 ```
