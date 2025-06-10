@@ -31,7 +31,6 @@ AI-VOICE-AGENT/
 ├── .gitignore
 ├── metrics.xlxs # contains log details
 ├── requirements.txt # Project dependencies
-
 ```
 
 ---
@@ -67,14 +66,12 @@ AI-VOICE-AGENT/
 
   # On Windows
   -venv\Scripts\activate
-
 ```
 
 ### 3. Install Dependencies
 
 ```
   - pip install "livekit-agents[deepgram,groq,elevenlabs,openai ,cartesia,silero,turn-detector]~=1.0" "livekit-plugins-noise-cancellation~=0.2" python-dotenv openpyxl
-
 ```
 
 ### 4. Then Run this
@@ -82,7 +79,6 @@ AI-VOICE-AGENT/
 ```
   # To save current installed packages to a file:
   - pip freeze > requirements.txt
-
 ```
 
 ### 4. Configure .env
@@ -97,7 +93,6 @@ Create a .env file in the root directory with your credentials:
   - CARTESIA_API_KEY=your_cartesia_api_key
   - GROQ_API_KEY=your_groq_api_key
   - ELEVENLABS_API_KEY=your_elevenlabs_api_key
-
 ```
 
 ## ▶️ Run the Assistant
@@ -114,8 +109,6 @@ Create a .env file in the root directory with your credentials:
 ```
   # This runs the assistant on LiveKit Cloud using the LiveKit Agents Playground.
   - python src/agent.py dev
-
-
 ```
 
 --> ⚠️ Note: Ensure your .env file is configured correctly with valid API keys and URLs before launching.
